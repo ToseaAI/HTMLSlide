@@ -34,7 +34,7 @@ The zip may contain these files at the archive root, or inside one top-level fol
 ## Quick Start
 
 ```bash
-git clone https://github.com/ToseaAI/HTMLSlice.git HTMLSlide
+git clone https://github.com/ToseaAI/HTMLSlide.git HTMLSlide
 cd HTMLSlide
 npm run validate
 npm run pack

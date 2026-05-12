@@ -12,7 +12,7 @@ HTMLSlide 是面向 HTML 演示文稿的公开打包格式，用于让外部 PPT
 ## 快速开始
 
 ```bash
-git clone https://github.com/ToseaAI/HTMLSlice.git HTMLSlide
+git clone https://github.com/ToseaAI/HTMLSlide.git HTMLSlide
 cd HTMLSlide
 npm run validate
 npm run pack

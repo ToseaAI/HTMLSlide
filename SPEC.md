@@ -78,7 +78,7 @@ Example:
   "description": "A small example deck for Tosea HTML Presenter.",
   "sourceSkill": {
     "name": "example-generator",
-    "url": "https://github.com/ToseaAI/HTMLSlice"
+    "url": "https://github.com/ToseaAI/HTMLSlide"
   },
   "slides": [
     {
