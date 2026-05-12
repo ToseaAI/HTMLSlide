@@ -1,12 +1,12 @@
 {
-  "name": "htmlslice",
+  "name": "htmlslide",
   "version": "1.0.0",
   "private": true,
-  "description": "HTMLSlice package format examples and validation tools for HTML presentation decks.",
+  "description": "HTMLSlide package format examples and validation tools for HTML presentation decks.",
   "type": "module",
   "scripts": {
     "validate": "node scripts/validate.mjs examples/basic-deck",
-    "pack": "node scripts/pack.mjs examples/basic-deck dist/htmlslice-basic-demo.zip",
+    "pack": "node scripts/pack.mjs examples/basic-deck dist/htmlslide-basic-demo.zip",
     "test": "npm run validate && npm run pack"
   },
   "engines": {

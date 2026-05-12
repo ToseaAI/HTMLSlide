@@ -1,6 +1,6 @@
-# HTMLSlice 1.0 Specification
+# HTMLSlide 1.0 Specification
 
-HTMLSlice is a zip-based package format for HTML presentations.
+HTMLSlide is a zip-based package format for HTML presentations.
 
 ## Goals
 
@@ -12,17 +12,17 @@ HTMLSlice is a zip-based package format for HTML presentations.
 
 ## Non-Goals
 
-- HTMLSlice is not a design system.
-- HTMLSlice does not require a specific JavaScript framework.
-- HTMLSlice does not define editing semantics.
-- HTMLSlice does not require speaker notes, animations, or embedded navigation.
+- HTMLSlide is not a design system.
+- HTMLSlide does not require a specific JavaScript framework.
+- HTMLSlide does not define editing semantics.
+- HTMLSlide does not require speaker notes, animations, or embedded navigation.
 
 ## Archive Rules
 
-An HTMLSlice package is a `.zip` file. The archive may have files at root:
+An HTMLSlide package is a `.zip` file. The archive may have files at root:
 
 ```text
-htmlslice.json
+htmlslide.json
 slides/slide_001.html
 assets/brand.css
 ```
@@ -30,7 +30,7 @@ assets/brand.css
 It may also have a single top-level folder:
 
 ```text
-my-deck/htmlslice.json
+my-deck/htmlslide.json
 my-deck/slides/slide_001.html
 my-deck/assets/brand.css
 ```
@@ -45,7 +45,7 @@ Paths must be relative. Absolute paths and parent traversal are invalid:
 
 ## Manifest
 
-`htmlslice.json` is the recommended manifest file.
+`htmlslide.json` is the recommended manifest file.
 
 Required fields:
 
@@ -69,9 +69,9 @@ Example:
 
 ```json
 {
-  "$schema": "schemas/htmlslice.schema.json",
+  "$schema": "schemas/htmlslide.schema.json",
   "version": "1.0",
-  "title": "HTMLSlice Demo Deck",
+  "title": "HTMLSlide Demo Deck",
   "aspectRatio": "16:9",
   "width": 1280,
   "height": 720,
@@ -119,7 +119,7 @@ Each slide should be a complete HTML document.
     <link rel="stylesheet" href="../assets/brand.css" />
   </head>
   <body>
-    <main class="htmlslice-slide">
+    <main class="htmlslide-slide">
       ...
     </main>
   </body>
@@ -129,7 +129,7 @@ Each slide should be a complete HTML document.
 Recommended slide canvas:
 
 ```css
-.htmlslice-slide {
+.htmlslide-slide {
   width: 1280px;
   height: 720px;
   overflow: hidden;

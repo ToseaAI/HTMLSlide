@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://tosea.ai/schemas/htmlslice.schema.json",
-  "title": "HTMLSlice Manifest",
+  "$id": "https://tosea.ai/schemas/htmlslide.schema.json",
+  "title": "HTMLSlide Manifest",
   "type": "object",
   "additionalProperties": true,
   "required": ["version", "title", "slides"],

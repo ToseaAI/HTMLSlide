@@ -1,6 +1,6 @@
-# HTMLSlice
+# HTMLSlide
 
-HTMLSlice is a portable package format for HTML presentations that should open cleanly in Tosea HTML Presenter.
+HTMLSlide is a portable package format for HTML presentations that should open cleanly in Tosea HTML Presenter.
 
 It is designed for PPT skills, AI agents, template generators, and design tools that export HTML slides. The format keeps each slide as an independent HTML document, includes all local assets, and uses a manifest to define playback order.
 
@@ -13,13 +13,13 @@ HTML PPT skills often export different shapes:
 - separate HTML files with inconsistent naming
 - local images and CSS in arbitrary folders
 
-HTMLSlice gives those tools one predictable target. If a skill exports an HTMLSlice zip, users can upload it to Tosea HTML Presenter and present it immediately.
+HTMLSlide gives those tools one predictable target. If a skill exports an HTMLSlide zip, users can upload it to Tosea HTML Presenter and present it immediately.
 
 ## Package Layout
 
 ```text
 my-deck.zip
-├── htmlslice.json
+├── htmlslide.json
 ├── slides/
 │   ├── slide_001.html
 │   ├── slide_002.html
@@ -34,13 +34,13 @@ The zip may contain these files at the archive root, or inside one top-level fol
 ## Quick Start
 
 ```bash
-git clone https://github.com/ToseaAI/HTMLSlice.git
-cd HTMLSlice
+git clone https://github.com/ToseaAI/HTMLSlice.git HTMLSlide
+cd HTMLSlide
 npm run validate
 npm run pack
 ```
 
-Then upload `dist/htmlslice-basic-demo.zip` to:
+Then upload `dist/htmlslide-basic-demo.zip` to:
 
 ```text
 https://tosea.ai/tools/html-presenter
@@ -51,7 +51,7 @@ https://tosea.ai/tools/html-presenter
 ```json
 {
   "version": "1.0",
-  "title": "HTMLSlice Demo Deck",
+  "title": "HTMLSlide Demo Deck",
   "aspectRatio": "16:9",
   "width": 1280,
   "height": 720,
@@ -79,7 +79,7 @@ Each slide should be a complete HTML document:
     <link rel="stylesheet" href="../assets/brand.css" />
   </head>
   <body>
-    <main class="htmlslice-slide">
+    <main class="htmlslide-slide">
       <h1>Quarterly Review</h1>
       <img src="../assets/chart.svg" alt="" />
     </main>
@@ -104,7 +104,7 @@ If your PPT skill currently generates a single `index.html`, convert it by:
 1. Split each slide into `slides/slide_001.html`, `slides/slide_002.html`, etc.
 2. Move local images, CSS, scripts, fonts, and data files into `assets/`.
 3. Rewrite references inside each slide to use relative paths.
-4. Create `htmlslice.json` with the playback order.
+4. Create `htmlslide.json` with the playback order.
 5. Zip the folder contents.
 
 See [docs/skill-author-guide.md](docs/skill-author-guide.md) for the recommended conversion checklist.
@@ -112,7 +112,7 @@ See [docs/skill-author-guide.md](docs/skill-author-guide.md) for the recommended
 ## Repository Contents
 
 - [SPEC.md](SPEC.md): full format specification.
-- [schemas/htmlslice.schema.json](schemas/htmlslice.schema.json): JSON Schema for `htmlslice.json`.
+- [schemas/htmlslide.schema.json](schemas/htmlslide.schema.json): JSON Schema for `htmlslide.json`.
 - [examples/basic-deck](examples/basic-deck): complete 3-slide example deck.
 - [scripts/validate.mjs](scripts/validate.mjs): dependency-free package checks.
 - [scripts/pack.mjs](scripts/pack.mjs): creates a zip package from an example deck.
@@ -121,10 +121,10 @@ See [docs/skill-author-guide.md](docs/skill-author-guide.md) for the recommended
 
 Tosea HTML Presenter accepts:
 
-- HTMLSlice `.zip` packages.
+- HTMLSlide `.zip` packages.
 - Single `.html` files as one-slide presentations.
 - Zip packages with `slides/slide_*.html` even without a manifest.
 - Zip packages with only `index.html` as a fallback one-slide presentation.
 
-HTMLSlice is the recommended public format for stable multi-slide playback.
+HTMLSlide is the recommended public format for stable multi-slide playback.
 

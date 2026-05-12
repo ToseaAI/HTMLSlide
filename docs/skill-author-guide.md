@@ -1,6 +1,6 @@
 # Skill Author Guide
 
-Use this checklist when adapting a PPT skill or HTML slide generator to HTMLSlice.
+Use this checklist when adapting a PPT skill or HTML slide generator to HTMLSlide.
 
 ## Export Checklist
 
@@ -8,7 +8,7 @@ Use this checklist when adapting a PPT skill or HTML slide generator to HTMLSlic
 2. Save slides as `slides/slide_001.html`, `slides/slide_002.html`, etc.
 3. Put all local assets under `assets/`.
 4. Rewrite slide references to relative paths.
-5. Write `htmlslice.json`.
+5. Write `htmlslide.json`.
 6. Validate the package.
 7. Zip the package contents.
 
@@ -82,7 +82,7 @@ node scripts/validate.mjs /path/to/my-deck
 ## Packaging
 
 ```bash
-node scripts/pack.mjs /path/to/my-deck dist/my-deck.htmlslice.zip
+node scripts/pack.mjs /path/to/my-deck dist/my-deck.htmlslide.zip
 ```
 
 The resulting zip can be uploaded to Tosea HTML Presenter.

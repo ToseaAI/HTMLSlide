@@ -5,7 +5,7 @@ import { spawn } from 'node:child_process'
 import { validateDeck } from './validate.mjs'
 
 const deckDir = path.resolve(process.argv[2] || 'examples/basic-deck')
-const outputZip = path.resolve(process.argv[3] || 'dist/htmlslice-basic-demo.zip')
+const outputZip = path.resolve(process.argv[3] || 'dist/htmlslide-basic-demo.zip')
 
 async function main() {
   const result = await validateDeck(deckDir)

@@ -1,13 +1,13 @@
 {
-  "$schema": "../../schemas/htmlslice.schema.json",
+  "$schema": "../../schemas/htmlslide.schema.json",
   "version": "1.0",
-  "title": "HTMLSlice Demo Deck",
+  "title": "HTMLSlide Demo Deck",
   "description": "A small example deck for Tosea HTML Presenter.",
   "aspectRatio": "16:9",
   "width": 1280,
   "height": 720,
   "sourceSkill": {
-    "name": "HTMLSlice example",
+    "name": "HTMLSlide example",
     "url": "https://github.com/ToseaAI/HTMLSlice"
   },
   "slides": [

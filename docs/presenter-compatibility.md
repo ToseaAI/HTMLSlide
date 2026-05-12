@@ -4,10 +4,10 @@ Tosea HTML Presenter is built for local preview, public share links, and offline
 
 ## Recommended Input
 
-Use an HTMLSlice zip:
+Use an HTMLSlide zip:
 
 ```text
-htmlslice.json
+htmlslide.json
 slides/slide_001.html
 slides/slide_002.html
 assets/...
@@ -22,7 +22,7 @@ The presenter may also accept:
 - zip files with `slides/slide_*.html`
 - zip files with only `index.html`
 
-These fallback modes help users preview existing files, but skill authors should target HTMLSlice for predictable multi-slide playback.
+These fallback modes help users preview existing files, but skill authors should target HTMLSlide for predictable multi-slide playback.
 
 ## Resource Limits
 

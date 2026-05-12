@@ -9,7 +9,7 @@ export async function validateDeck(deckDir) {
   const root = path.resolve(deckDir)
   const errors = []
   const warnings = []
-  const manifestPath = path.join(root, 'htmlslice.json')
+  const manifestPath = path.join(root, 'htmlslide.json')
 
   let manifest
   try {
@@ -17,21 +17,21 @@ export async function validateDeck(deckDir) {
   } catch (error) {
     return {
       ok: false,
-      errors: [`Missing or invalid htmlslice.json: ${error.message}`],
+      errors: [`Missing or invalid htmlslide.json: ${error.message}`],
       warnings,
     }
   }
 
   if (manifest.version !== '1.0') {
-    errors.push('htmlslice.json version must be "1.0".')
+    errors.push('htmlslide.json version must be "1.0".')
   }
 
   if (!manifest.title || typeof manifest.title !== 'string') {
-    errors.push('htmlslice.json title is required.')
+    errors.push('htmlslide.json title is required.')
   }
 
   if (!Array.isArray(manifest.slides) || manifest.slides.length === 0) {
-    errors.push('htmlslice.json slides must be a non-empty array.')
+    errors.push('htmlslide.json slides must be a non-empty array.')
   }
 
   const slideIds = new Set()
@@ -173,7 +173,7 @@ async function main() {
     process.exit(1)
   }
 
-  console.log(`HTMLSlice package is valid: ${path.resolve(deckDir)}`)
+  console.log(`HTMLSlide package is valid: ${path.resolve(deckDir)}`)
 }
 
 if (process.argv[1] === __filename) {
