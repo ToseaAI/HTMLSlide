@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Upload</title>
+    <link rel="stylesheet" href="../assets/brand.css" />
+    <style>
+      .htmlslice-slide {
+        display: grid;
+        place-items: center;
+        text-align: center;
+      }
+
+      .title {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .body {
+        margin: 0 auto 28px;
+      }
+
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        width: 860px;
+      }
+
+      .steps div {
+        min-height: 110px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.78);
+        text-align: left;
+      }
+
+      .steps strong {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .steps span {
+        color: var(--muted);
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="htmlslice-slide">
+      <section>
+        <div class="kicker">Ready to upload</div>
+        <h1 class="title">Zip this folder and open it in Tosea HTML Presenter.</h1>
+        <p class="body">The same package can be previewed locally, shared online, or downloaded for offline presentation.</p>
+        <div class="steps">
+          <div><strong>Validate</strong><span>Check manifest, slide paths, and local assets.</span></div>
+          <div><strong>Pack</strong><span>Create a zip with htmlslice.json at the package root.</span></div>
+          <div><strong>Present</strong><span>Upload the package and start presenting.</span></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+

@@ -1,0 +1,31 @@
+{
+  "$schema": "../../schemas/htmlslice.schema.json",
+  "version": "1.0",
+  "title": "HTMLSlice Demo Deck",
+  "description": "A small example deck for Tosea HTML Presenter.",
+  "aspectRatio": "16:9",
+  "width": 1280,
+  "height": 720,
+  "sourceSkill": {
+    "name": "HTMLSlice example",
+    "url": "https://github.com/ToseaAI/HTMLSlice"
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "title": "Cover",
+      "src": "slides/slide_001.html"
+    },
+    {
+      "id": "portable-assets",
+      "title": "Portable Assets",
+      "src": "slides/slide_002.html"
+    },
+    {
+      "id": "upload",
+      "title": "Upload",
+      "src": "slides/slide_003.html"
+    }
+  ]
+}
+

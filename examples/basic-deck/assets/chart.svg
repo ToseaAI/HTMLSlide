@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="280" viewBox="0 0 520 280" role="img" aria-label="Sample chart">
+  <rect width="520" height="280" rx="18" fill="#f5f8ff"/>
+  <path d="M60 218 C130 162 182 178 244 118 C310 54 388 88 462 42" fill="none" stroke="#2f7de1" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="244" cy="118" r="16" fill="#1aa6a5"/>
+  <circle cx="462" cy="42" r="16" fill="#1aa6a5"/>
+  <text x="42" y="52" fill="#17202a" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">Local SVG asset</text>
+  <text x="42" y="252" fill="#5e6f84" font-family="Inter, Arial, sans-serif" font-size="18">Stored under assets/chart.svg</text>
+</svg>
+
